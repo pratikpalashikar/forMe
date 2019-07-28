@@ -24,6 +24,23 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+
+    <!--Adding dependency for test purpose-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+      <version>2.1.6.RELEASE</version>
+    </dependency>
+
+    <!--adding the dependency for the in memory data base for test purposes-->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>test</scope>
+      <version>1.4.194</version>
+    </dependency>
+
   </dependencies>
 
   <!--helps you make uber jar-->
@@ -36,4 +53,5 @@
     </plugins>
   </build>
 
+  
 </project>
