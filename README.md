@@ -1,7 +1,7 @@
 # forMe
 Application to organize the interview preparation forMe
 
-#Cassandra Data Model
+# Cassandra Data Model
 
  [Create a table Companies with following columns]()
  
