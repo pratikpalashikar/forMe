@@ -1,0 +1,6 @@
+com/techmisal/forme/databaseModels/Companies.class
+com/techmisal/forme/models/Companies.class
+com/techmisal/forme/controller/ForMeController.class
+com/techmisal/forme/ForMe.class
+com/techmisal/forme/repository/CompanyRepository.class
+com/techmisal/forme/services/FeedMe.class

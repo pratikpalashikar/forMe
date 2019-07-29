@@ -33,12 +33,16 @@
       <version>2.1.6.RELEASE</version>
     </dependency>
 
-    <!--adding the dependency for the in memory data base for test purposes-->
+    <!--Cassandra dependency-->
     <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
-      <scope>test</scope>
-      <version>1.4.194</version>
+      <groupId>com.datastax.cassandra</groupId>
+      <artifactId>cassandra-driver-core</artifactId>
+    </dependency>
+
+    <!--jpa annotations-->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-cassandra</artifactId>
     </dependency>
 
   </dependencies>
