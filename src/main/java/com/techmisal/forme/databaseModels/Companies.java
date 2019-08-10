@@ -1,6 +1,6 @@
 package com.techmisal.forme.databaseModels;
 
-import java.sql.Timestamp;
+import java.util.Date;
 import java.util.UUID;
 import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
 import org.springframework.data.cassandra.core.mapping.Column;
@@ -29,6 +29,6 @@ public class Companies {
   private String updatedBy;
 
   @Column("create_ts")
-  private Timestamp createTs;
+  private Date createTs;
 
 }

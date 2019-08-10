@@ -1,4 +1,4 @@
-package com.techmisal.forme.models;
+package com.techmisal.forme.models.response;
 
 import java.util.UUID;
 

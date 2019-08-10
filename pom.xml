@@ -45,6 +45,13 @@
       <artifactId>spring-data-cassandra</artifactId>
     </dependency>
 
+    <!--Auto properties -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
+
   </dependencies>
 
   <!--helps you make uber jar-->
