@@ -20,7 +20,7 @@ public class ForMeController {
   public ResponseEntity<List<Companies>> getCompaniesList(){
 
     List<com.techmisal.forme.databaseModels.Companies> listOfCompanies = this.feedMe.getComapnies();
-    return new ResponseEntity<>(listOfCompanies, HttpStatus.OK);
+    return new ResponseEntity<List<Companies>>(listOfCompanies, HttpStatus.OK);
 
   }
 

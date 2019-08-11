@@ -31,4 +31,31 @@ public class Companies {
   @Column("create_ts")
   private Date createTs;
 
+  public UUID getId() {
+    return id;
+  }
+
+  public String getCompanyName() {
+    return CompanyName;
+  }
+
+  public String getStatus() {
+    return status;
+  }
+
+  public String getResult() {
+    return result;
+  }
+
+  public String getCreatedBy() {
+    return createdBy;
+  }
+
+  public String getUpdatedBy() {
+    return updatedBy;
+  }
+
+  public Date getCreateTs() {
+    return createTs;
+  }
 }
