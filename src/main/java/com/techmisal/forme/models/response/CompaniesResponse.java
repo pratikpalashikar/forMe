@@ -5,7 +5,7 @@ import java.util.UUID;
 /*
   This class is used to render the ui model
  */
-public class Companies {
+public class CompaniesResponse {
 
   private String CompanyName;
   private String status;
