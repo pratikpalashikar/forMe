@@ -7,18 +7,11 @@ import java.util.UUID;
  */
 public class Companies {
 
-  private UUID id;
   private String CompanyName;
   private String status;
   private String result;
 
-  public UUID getId() {
-    return id;
-  }
 
-  public void setId(UUID id) {
-    this.id = id;
-  }
 
   public String getCompanyName() {
     return CompanyName;
