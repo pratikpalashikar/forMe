@@ -58,4 +58,32 @@ public class Companies {
   public Date getCreateTs() {
     return createTs;
   }
+
+  public void setId(UUID id) {
+    this.id = id;
+  }
+
+  public void setCompanyName(String companyName) {
+    CompanyName = companyName;
+  }
+
+  public void setStatus(String status) {
+    this.status = status;
+  }
+
+  public void setResult(String result) {
+    this.result = result;
+  }
+
+  public void setCreatedBy(String createdBy) {
+    this.createdBy = createdBy;
+  }
+
+  public void setUpdatedBy(String updatedBy) {
+    this.updatedBy = updatedBy;
+  }
+
+  public void setCreateTs(Date createTs) {
+    this.createTs = createTs;
+  }
 }
