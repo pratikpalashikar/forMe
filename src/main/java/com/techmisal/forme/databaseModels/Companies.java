@@ -4,13 +4,14 @@ import java.util.Date;
 import java.util.UUID;
 import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
 import org.springframework.data.cassandra.core.mapping.Column;
+import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 import org.springframework.data.cassandra.core.mapping.Table;
 
 @Table("companies")
 public class Companies {
 
-  @PrimaryKeyColumn(type = PrimaryKeyType.PARTITIONED)
+  @PrimaryKey
   private UUID id;
 
   @Column("company_name")
