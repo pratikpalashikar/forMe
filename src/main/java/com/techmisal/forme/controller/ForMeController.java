@@ -40,8 +40,9 @@ public class ForMeController {
 
 
   /*
-  * Add a new company
-  * */
+   * Add a new company
+   *
+   * */
   @PostMapping(value = "/add-company")
   public boolean addCompany(@RequestBody List<CompaniesResponse> companies){
     return this.feedMe.addCompany(companies);
@@ -51,9 +52,9 @@ public class ForMeController {
   /*
   * Update a company
   * */
-  @PutMapping(value = "/modify-company")
-  public boolean modifyCompany(@RequestBody CompaniesResponse company){
-    return this.feedMe.modifyCompany(company);
+  @PutMapping(value = "/companies/{id}")
+  public boolean modifyCompany(@PathVariable(value = "id") UUID id, @RequestBody CompaniesResponse company){
+    return this.feedMe.modifyCompany(id, company);
   }
 
 

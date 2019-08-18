@@ -42,9 +42,21 @@ public class FeedMe {
     return true;
   }
 
-  public boolean modifyCompany(CompaniesResponse company) {
-
-    return true;
+  public boolean modifyCompany(UUID id, CompaniesResponse company) {
+    Optional<Companies> res = companyRepository.findById(id);
+    if(res.isPresent()){
+      Companies updateCompany = new Companies();
+      updateCompany.setUpdatedBy(res.get().getUpdatedBy());
+      updateCompany.setId(id);
+      updateCompany.setStatus(company.getStatus());
+      updateCompany.setResult(company.getResult());
+      updateCompany.setCompanyName(res.get().getCompanyName());
+      updateCompany.setCreateTs(res.get().getCreateTs());
+      updateCompany.setCreatedBy(res.get().getCreatedBy());
+      companyRepository.save(updateCompany);
+      return true;
+    }
+    return false;
   }
 
   public Optional<Companies> getSpecificCompany(UUID id) {
