@@ -1,11 +1,13 @@
 package com.techmisal.forme.services;
 
+import com.techmisal.forme.databaseModels.Companies;
 import com.techmisal.forme.models.response.CompaniesResponse;
 import com.techmisal.forme.repository.CompanyRepository;
 
 import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,5 +40,14 @@ public class FeedMe {
       if (result == null) return false;
     }
     return true;
+  }
+
+  public boolean modifyCompany(CompaniesResponse company) {
+
+    return true;
+  }
+
+  public Optional<Companies> getSpecificCompany(UUID id) {
+    return companyRepository.findById(id);
   }
 }
